@@ -103,3 +103,27 @@ td {
   min-width: 450px;
   margin: 20px;
 }
+
+#troll {
+  width: 500px;
+  min-height: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  background-color: red;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+    background-color: #00FF00;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
